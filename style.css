@@ -1,0 +1,645 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+
+
+@font-face {
+    font-family: castoro;
+    src: url(assets/fonts/CastoroTitling-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: vollkorn;
+    src: url(assets/fonts/Vollkorn-VariableFont_wght.ttf);
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+html {
+    
+    background-image: url(assets/img/tile.png);
+
+
+    
+    background-repeat: repeat;
+    background-size: 525px;
+} 
+
+
+
+#navbar {
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar a {
+    font-weight: 600;
+    font-family: vollkorn;
+    padding: 15px;
+    color: #bb5f28;
+    font-size: x-large;
+    
+    
+}
+
+#selected {
+    color: white !important;
+}
+
+#selected:hover {
+    font-style: normal !important;
+}
+
+#navbar a:hover {
+    
+    font-style: italic;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: white;
+    
+}
+
+.line{
+    width: 35%;
+    height: 2px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    }
+
+#title {
+    font-family: vollkorn;
+    color: #bb5f28;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+#description {
+    font-family: vollkorn;
+    color: #bb5f28;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+content {
+    
+}
+
+#home {
+    width: 70%;
+    height: auto;
+    min-height: 100%;
+    /* background-color: #ffc877; */
+    background: linear-gradient(to bottom, #ffc877, #ffd08a);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e9874c;
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 0px 0px 15px 15px;
+    color: white;
+}
+
+#footbox {
+    margin: 10px;
+    height: 80px;
+    display: inline-flex;
+}
+
+#footlogo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+#footer-left {
+    float: right;
+    display: inline-block;
+    margin-right: auto;
+    height: 100%;
+    padding: 20px;
+}
+
+
+#footer-right {
+    float: left;
+    display: inline-block;
+    margin-left: auto;
+    height: 100%;
+    padding: 20px;
+}
+
+.footer-link {
+    color: white;
+    vertical-align: middle;
+    padding: 10px;
+
+
+    
+
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    font-style: italic;
+    border-width: 0px;
+
+    
+}
+
+#copyrighttag {
+    font-size: 15px;
+    padding: 3px;
+    text-align: right;
+    font-family: 'vollkorn';
+    font-weight: 100;
+}
+
+
+
+#homeimg {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#imginhome {
+    width: 60%;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+}
+
+#img {
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+}
+
+#profile {
+    background-color: #ffe6af;
+    display: block;
+    width: 100%;
+    height: 1000px;
+}
+
+#profilecontent {
+    padding: 70px;
+    font-family: 'Times New Roman', Times;
+    
+}
+
+
+
+#coverimg {
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+#sitetitle {
+    
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titleprops {
+    border-width: 5px 7px 5px 7px;
+    border-style: solid;
+    border-color: #e78850;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+#videoshowcase {
+    text-align: center;
+    width: 60%;
+    height: fit-content;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    
+}
+
+#ytdiv {
+    margin: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+}
+
+#showcase {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#description-img{
+    font-family: vollkorn;
+    color: #bb5f28;
+    text-align: center;
+    margin-left: 3%;
+    
+}
+
+video {
+    display: block;
+}
+
+#showcasetext {
+    
+    padding: 10px;
+
+    font-family: vollkorn;
+    color: #bb5f28;
+}
+
+#showcasetitle {
+    text-align: center;
+    padding: 0px 30px 0px 0px
+}
+
+#showcasenote {
+    font-size: medium !important;
+    margin: 10px;
+}
+
+
+/* OLD VIDEO BOXES, M&S Design */
+
+.oldvideos /* PARENT */ {
+    width: 60%;
+    min-height: 110px;
+    background-color: #e9874c;
+    background: linear-gradient(to bottom, #f59054, #ff9f65);
+    border-width: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.oldvidbox {
+    margin: 10px;
+    vertical-align: middle;
+    
+    
+}
+
+.prevboxtitle {
+    width: 20%;
+    float: left;
+}
+
+.prevboxyear {
+    width: 20%;
+    float: left;
+
+}
+
+.prevboxdesc {
+    width: 40%;
+    float: left;
+}
+
+.prevvidsmallbox {
+    background-color: #bb5f28;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 20%;
+    height: fit-content;
+}
+
+.prevvidtitle {
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    color: white;
+}
+
+th img {
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#instagram {
+    background-image: url(assets/instagram.ico);
+}
+
+.icon {
+    width: 30px;
+    
+
+}
+
+#attributebox {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#attribution {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+#attribution:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+#contactimg {
+    
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#contact {
+    display: flex;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#contactleft {
+    float: left;
+    width: 50%;
+}
+
+#contactright {
+    float: right;
+    text-align: left;
+    width: 50%;
+    padding: 20px;
+
+}
+
+.contactoption {
+    font-family: vollkorn;
+    color: #bb5f28;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.contactoption:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+.displaynonedesk {
+    display: none;
+}
+
+
+
+
+/*  QUOTE BOXES */
+
+.quotebox {
+    margin: 30px;
+    
+}
+
+.quote {
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+
+.quoter {
+    color: #bb5f28;
+    text-align: center;
+    font-size: small;
+    padding-top: 6px;
+}
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 1200px) {
+
+#sitetitle {
+    width: 97%;
+}
+
+
+#titleprops {
+    border-width: 3px 5px 3px 5px;
+}
+
+html {
+    background-size: 300px;
+}
+
+
+#home {
+    width: 95%;
+}
+
+footer {
+    width: 95%;
+    margin-bottom: 180px;
+}
+
+#footbox {
+    height: 110px;
+}
+
+.footer-link {
+    padding: 0px;
+}
+
+#footer-right {
+    padding: 10px;
+    display: grid;
+}
+
+#footer-left {
+    padding: 10px;
+    display: grid;
+}
+
+#footlogo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+
+#videoshowcase {
+
+    text-align: center;
+    width: 90%;
+   
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ytvideo {
+    text-align: center;
+    width: 90%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#ytdiv {
+    border-style: none;
+}
+
+#showcasetext {
+    width: auto ;
+}
+    
+
+#showcase {
+    display: block;
+}
+
+.oldvideos {
+    width: 90%;
+}
+
+#imginhome {
+    width: 100%;
+}
+
+#navbar a {
+    font-weight: 600;
+    font-family: vollkorn;
+    padding: 0px 5px 0px 5px;
+    color: #bb5f28;
+    font-size: x-large;
+    
+    
+}
+
+#description-img {
+    display: block;
+    
+}
+
+.displaynonemob {
+    display: none;
+
+}
+
+.displaynonedesk {
+    display: block;
+}
+
+
+#contactleft {
+    width: 60%;
+}
+
+#contactright {
+    padding: 0px;
+}
+
+.contactoption {
+    padding: 2px;
+}
+
+#contact {
+    width: 92%;
+}
+
+
+
+
+}
+
+#artistcvbutton {
+    background-color: #e78850;
+    color: white;
+    padding: 10px;
+    font-family: 'vollkorn';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#artistcvbutton:hover {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color: #f38f55;
+}
+
