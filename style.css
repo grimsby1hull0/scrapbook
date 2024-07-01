@@ -31,10 +31,25 @@ a {
 }
 
 
-#content {
-  width: 70%;
-  height: 100%;
-  background-color: gray;
+.content {
+  width: 90%;
+  /* height: 200px; */
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.contentbox {
+  width: 200px;
+  height:fit-content;
+  min-height: 20%;
+  border-width: 10px;
+  border-color: grey;
+  border-style: double;
+  margin-top: 10px;
+  flex: 1 1 200px;
+  margin: 10px;
 }
