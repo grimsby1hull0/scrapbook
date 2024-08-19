@@ -12,13 +12,17 @@
     box-sizing:border-box;
   }
 
+html {
+    background-color: #cbcbff;
+}
+
 body {
     padding: 20px;
     display: block;
 }
 
 h3 {
-  color: rgb(94, 94, 94);
+    color: rgb(255 255 255);
   text-rendering: optimizeSpeed;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
@@ -49,6 +53,7 @@ a:visited {
   align-items: flex-start;
   flex-wrap: wrap;
   display: flex;
+  background-color: white;
 }
 
 .contentbox {
@@ -62,3 +67,17 @@ a:visited {
   flex: 1 1 200px;
   margin: 10px;
 }
+
+#navbar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#navbar a {
+    padding: 3px;
+}
+

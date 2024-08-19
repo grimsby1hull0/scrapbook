@@ -12,6 +12,12 @@
     box-sizing:border-box;
   }
 
+html {
+    background-image: url(tile.png);
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
 body {
     padding: 20px;
     display: block;
@@ -24,11 +30,20 @@ h3 {
     -moz-osx-font-smoothing: none;
     font-weight: 100;
     font-size: xx-large;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+#links {
+    background-color: beige;
+    width: fit-content;
+    padding: 0px 5px 5px 5px;
 }
 
 a {
   font-size: larger;
   text-decoration: none;
+  color: green;
 }
 
 a:hover {
@@ -37,6 +52,7 @@ a:hover {
 
 a:visited {
   text-decoration: none;
+  color: #00bf00;
 }
 
 
@@ -49,6 +65,9 @@ a:visited {
   align-items: flex-start;
   flex-wrap: wrap;
   display: flex;
+  background-color: beige;
+  border-radius: 20px;
+    padding: 20px;
 }
 
 .contentbox {
@@ -61,4 +80,17 @@ a:visited {
   margin-top: 10px;
   flex: 1 1 200px;
   margin: 10px;
+}
+
+#navbar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#navbar a {
+    padding: 3px;
 }
