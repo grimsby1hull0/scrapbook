@@ -81,3 +81,44 @@ a:visited {
     padding: 3px;
 }
 
+#sitesbox {
+  background-color: #ffe56f;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  padding: 10px;
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+
+  #sitesbox {
+    background-color: #ffe56f;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+  .webdes {
+    margin: 10px;
+    display: block;
+  }
+
+  .content {
+    width: 95%;
+    align-content: center;
+  }
+
+}
