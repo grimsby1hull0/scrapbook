@@ -4,6 +4,7 @@
   text-rendering:optimizeSpeed;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
+    
 }
 
 * {
@@ -12,9 +13,20 @@
     box-sizing:border-box;
   }
 
+html {
+  background-image: url(assets/tile.png);
+  background-repeat: repeat;
+  image-rendering: -webkit-optimize-contrast;
+  background-size: 50px;
+}
+
 body {
-    padding: 20px;
-    display: block;
+  padding: 20px;
+  display: block;
+  box-sizing: border-box;
+  text-rendering:optimizeSpeed;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
 }
 
 h3 {
@@ -49,6 +61,9 @@ a:visited {
   align-items: flex-start;
   flex-wrap: wrap;
   display: flex;
+  background-color: white;
+  padding: 20px;
+  margin-top: 25px;
 }
 
 .contentbox {

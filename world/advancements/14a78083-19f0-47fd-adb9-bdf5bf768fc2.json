@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:savanna_plateau": "2023-07-17 16:10:41 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 3337
+}
