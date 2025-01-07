@@ -13,25 +13,26 @@
   }
 
 html {
-    background-image: url(assets/gardentile.png);
-    background-repeat: repeat;
-    background-size: 100px;
+  background-image: url(assets/gardentile.png); */
+  background-repeat: repeat;
+  background-size: 100px;
+  background-color: #afebff;
 }
 
 body {
-    padding: 20px;
-    display: block;
+  padding: 20px;
+  display: block;
 }
 
 h3 {
   color: rgb(94, 94, 94);
   text-rendering: optimizeSpeed;
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: none;
-    font-weight: 100;
-    font-size: xx-large;
-    background-color: beige;
-    border-radius: 5px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-weight: 100;
+  font-size: xx-large;
+  background-color: beige;
+  border-radius: 5px;
 }
 
 #links {
