@@ -13,7 +13,7 @@
   }
 
 html {
-    background-image: url(tile.png);
+    background-image: url(assets/gardentile.png);
     background-repeat: repeat;
     background-size: 100px;
 }

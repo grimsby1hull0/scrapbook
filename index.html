@@ -31,38 +31,84 @@
 
 <html>
     <head>
-        <title>arron ware's scrapbook</title>
-        <link rel="icon" href="jessop.ico">
 
-        <link href="style.css" rel="stylesheet">
 
+      <script>
+        function getimg() {
+          var currentTime = new Date().getHours();
+          if (0 <= currentTime&&currentTime < 8) {
+            document.write("<img src='assets/scottownnight.gif' id='headergif' >");
+          }
+          if (8 <= currentTime&&currentTime < 17) {
+            document.write("<img src='assets/scottownday.gif' id='headergif' >");
+          }
+          if (17 <= currentTime&&currentTime < 0) {
+            document.write("<img src='assets/scottownnight.gif' id='headergif' >");
+          }
+          
+        }
         
-        <meta name="description" content="projects and recipes">
-        <meta name="keywords" content="arron, ware, photography, sound design, manchester, lincolnshire, cleethorpes, video, art">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-        <meta charset="UTF-8">
-        <meta name="language" content="English">
-        <meta name="author" content="Arron Ware">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        
+        </script>
+
+
+      <script>
+        function getstyle() {
+          var currentTime = new Date().getHours();
+          if (0 <= currentTime&&currentTime < 8) {
+            document.write("<link href='nightstyle.css' rel='stylesheet'>");
+          }
+          if (8 <= currentTime&&currentTime < 17) {
+            document.write("<link href='style.css' rel='stylesheet'>");
+          }
+          if (17 <= currentTime&&currentTime < 0) {
+            document.write("<link href='nightstyle.css' rel='stylesheet'>");
+          }
+          
+        }
+        
+        
+        
+      </script>
+      <link href='style.css' rel='stylesheet'>
+      <link href='core.css' rel='stylesheet'>
+      <script>getstyle();</script>
+        
+    
+
+
+
+      <title>arron ware's scrapbook</title>
+      <link rel="icon" href="jessop.ico">
+
+
+      
+      <meta name="description" content="projects and recipes">
+      <meta name="keywords" content="arron, ware, photography, sound design, manchester, lincolnshire, cleethorpes, video, art">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+      <meta charset="UTF-8">
+      <meta name="language" content="English">
+      <meta name="author" content="Arron Ware">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     </head>
 
     <body>
+      <div id="logolinks">
         <h3>
             <a href=index.html style="text-decoration: inherit; color: inherit; font-family: inherit; font-size: inherit;">arron</a> ware's scrapbook
         </h3>
         <div w3-include-html="include/links.html"></div>
+      </div>
         
-
+        <script>getimg();</script>
         <div class="content">
-            This is a place for me to host all of my projects alongside extra pieces related to my hobbies. 
-            <br> <br>
-            Such as...
-            <br> <br>
-            - Archived versions of previous websites with descriptions on my thought process. <br> 
-            - Extra bits and pieces from my hobbies ( photography outtakes / bitesize cinematography/travel journals )<br>
-            - Progress logs and guides  <br>
+            Hi!
+            This is my scrapbook website.
+            I keep all my my little projects and bits that I would like to have online somewhere here. <br><br>
+            The website has no sole objective other than to be one large mashup of odd and ends, I hope you enjoy exploring!
             
 
           
