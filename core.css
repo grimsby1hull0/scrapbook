@@ -57,9 +57,10 @@ h3 {
     -moz-osx-font-smoothing: none;
     font-weight: 100;
     font-size: xx-large;
+    width: fit-content;
 }
 
-a, #links{
+a #links{
   font-size: larger !important;
   
 }
@@ -97,6 +98,10 @@ a, #links{
     width: 100%;
     margin-left: none;
     margin-right: none;
+  }
+
+  h3 {
+    font-size: xx-large;
   }
 
 }
