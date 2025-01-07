@@ -1,3 +1,18 @@
 html {
     background-color: #d0fdff;
 }
+
+a, links {
+    color: darkcyan;
+    font-style: oblique;
+}
+
+h3 {
+    color: #e8552a;
+    font-style: oblique;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}

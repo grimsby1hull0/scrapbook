@@ -1,0 +1,16 @@
+html {
+    background-color: black;
+}
+
+h3 {
+    color: rgb(145 0 5);
+}
+
+.content {
+    background-color: #211313 !important;
+    color: white;
+}
+
+a, #links {
+    color: crimson !important;
+}

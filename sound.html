@@ -1,3 +1,106 @@
-hi :)
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script>
 
-im not ready yet sorrry
+
+<html>
+    <head>
+
+
+
+      <script>
+        function getstyle() {
+          var currentTime = new Date().getHours();
+          if (0 <= currentTime&&currentTime < 8) {
+            document.write("<link href='nightstyle.css' rel='stylesheet'>");
+          }
+          if (8 <= currentTime&&currentTime < 17) {
+            document.write("<link href='style.css' rel='stylesheet'>");
+          }
+          if (17 <= currentTime&&currentTime < 0) {
+            document.write("<link href='nightstyle.css' rel='stylesheet'>");
+          }
+          
+        }
+        
+        
+        
+      </script>
+      <link href='sound.css' rel='stylesheet'>
+      <link href='core.css' rel='stylesheet'>
+      <script>getstyle();</script>
+        
+    
+
+
+
+      <title>arron ware's scrapbook: Photography</title>
+      <link rel="icon" href="jessop.ico">
+
+
+      
+      <meta name="description" content="projects and recipes">
+      <meta name="keywords" content="arron, ware, photography, sound design, manchester, lincolnshire, cleethorpes, video, art">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+      <meta charset="UTF-8">
+      <meta name="language" content="English">
+      <meta name="author" content="Arron Ware">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body>
+      <div id="logolinks">
+        <h3>
+            <a href=index.html style="text-decoration: inherit; color: inherit; font-family: inherit; font-size: inherit;">arron</a> ware's scrapbook
+        </h3>
+        <div w3-include-html="include/links.html"></div>
+      </div>
+        
+        <img src='assets/sound.gif' id='headergif' >
+        <div class="content">
+            sound
+            
+
+          
+
+        </div>
+
+		
+    </body>
+
+
+
+
+</html>
+
+<script>
+    includeHTML();
+</script>

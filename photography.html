@@ -34,46 +34,15 @@
 
 
       <script>
-        function getimg() {
-          var currentTime = new Date().getHours();
-          if (0 <= currentTime&&currentTime < 8) {
-            document.write("<img src='assets/placeholder.gif' id='headergif' >");
-          }
-          if (8 <= currentTime&&currentTime < 17) {
-            document.write("<img src='assets/placeholder.gif' id='headergif' >");
-          }
-          if (17 <= currentTime&&currentTime < 0) {
-            document.write("<img src='assets/placeholder.gif' id='headergif' >");
-          }
-          
-        }
         
-        
-        
-        </script>
 
 
-      <script>
-        function getstyle() {
-          var currentTime = new Date().getHours();
-          if (0 <= currentTime&&currentTime < 8) {
-            document.write("<link href='nightstyle.css' rel='stylesheet'>");
-          }
-          if (8 <= currentTime&&currentTime < 17) {
-            document.write("<link href='style.css' rel='stylesheet'>");
-          }
-          if (17 <= currentTime&&currentTime < 0) {
-            document.write("<link href='nightstyle.css' rel='stylesheet'>");
-          }
-          
-        }
-        
-        
+      
         
       </script>
-      <link href='style.css' rel='stylesheet'>
+      <link href='photography.css' rel='stylesheet'>
       <link href='core.css' rel='stylesheet'>
-      <script>getstyle();</script>
+      
         
     
 
@@ -103,7 +72,7 @@
         <div w3-include-html="include/links.html"></div>
       </div>
         
-        <script>getimg();</script>
+        <img src='assets/photos.gif' id='headergif' >
         <div class="content">
             photography, maybe
             

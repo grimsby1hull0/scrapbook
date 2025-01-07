@@ -26,7 +26,7 @@
         }
       }
     }
-    </script>
+</script>
 
 
 <html>
@@ -34,31 +34,37 @@
 
 
       <script>
-        function getimg() {
-          var currentTime = new Date().getHours();
-          if (0 <= currentTime&&currentTime < 8) {
-            document.write("<img src='assets/flipit.gif' id='headergif' >");
-          }
-          if (8 <= currentTime&&currentTime < 17) {
-            document.write("<img src='assets/flipit.gif' id='headergif' >");
-          }
-          if (17 <= currentTime&&currentTime < 0) {
-            document.write("<img src='assets/flipit.gif' id='headergif' >");
-          }
-          
+        
+        // Function to apply the appropriate style based on the time of day
+        function getstyle() {
+            var currentTime = new Date().getHours();
+            var linkElement = document.getElementById('theme-style'); // Reference to the link element
+
+            if (0 <= currentTime && currentTime < 8) {
+                linkElement.href = 'nightstyle.css';
+            } else if (8 <= currentTime && currentTime < 17) {
+                linkElement.href = 'style.css';
+            } else {
+                linkElement.href = 'nightstyle.css';
+            }
         }
         
+      </script>
         
-        
-        </script>
-
 
       
-      <link href='video.css' rel='stylesheet'>
+        
+      <!-- Core CSS -->
       <link href='core.css' rel='stylesheet'>
+      <link href='video.css' rel='stylesheet'>
       
-        
-    
+      <script>
+        // Wait until the page is loaded before calling these functions
+        window.onload = function() {
+            getstyle();  // Set the appropriate theme
+            
+        };
+      </script>
 
 
 
@@ -86,12 +92,11 @@
         <div w3-include-html="include/links.html"></div>
       </div>
         
-        <script>getimg();</script>
+        <img src='assets/flipit.gif' id='headergif' >
         <div class="content">
-            Hi!
-            This is my scrapbook website.
-            I keep all my my little projects and bits that I would like to have online somewhere here. <br><br>
-            The website has no sole objective other than to be one large mashup of odd and ends, I hope you enjoy exploring!
+            video <br><br>
+
+            content
             
 
           
