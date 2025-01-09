@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIF Toggle</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    #gif-container {
+      cursor: pointer;
+      width: 300px; /* Adjust as needed */
+      height: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="gif-container">
+    <img id="current-gif" src="../assets/dtn.gif" alt="Day GIF">
+  </div>
+
+  <script>
+    // Paths to the GIFs
+    const gifs = ["../assets/dtnn.gif", "../assets/ntdd.gif"];
+    let currentGifIndex = 0;
+
+    const gifContainer = document.getElementById("gif-container");
+    const currentGif = document.getElementById("current-gif");
+
+    gifContainer.addEventListener("click", () => {
+      // Restart the GIF by reloading it
+      const gifToPlay = gifs[currentGifIndex];
+      currentGif.src = `${gifToPlay}?t=${new Date().getTime()}`; // Add timestamp to force reload
+
+      // Wait for the GIF to finish playing
+      const gifDuration = currentGifIndex === 0 ? 2000 : 3000; // Adjust durations for day/night GIFs
+      setTimeout(() => {
+        // Swap to the next GIF
+        currentGifIndex = (currentGifIndex + 1) % gifs.length;
+        currentGif.src = gifs[currentGifIndex];
+      }, gifDuration);
+    });
+  </script>
+</body>
+</html>

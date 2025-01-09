@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <script>
     function includeHTML() {
       var z, i, elmnt, file, xhttp;
@@ -33,53 +34,17 @@
     <head>
 
 
-      <script>
-        function getimg() {
-          var currentTime = new Date().getHours();
-          if (0 <= currentTime&&currentTime < 8) {
-            document.write("<img src='assets/placeholder.gif' id='headergif' >");
-          }
-          if (8 <= currentTime&&currentTime < 17) {
-            document.write("<img src='assets/placeholder.gif' id='headergif' >");
-          }
-          if (17 <= currentTime&&currentTime < 0) {
-            document.write("<img src='assets/placeholder.gif' id='headergif' >");
-          }
-          
-        }
-        
-        
-        
-        </script>
 
-
-      <script>
-        function getstyle() {
-          var currentTime = new Date().getHours();
-          if (0 <= currentTime&&currentTime < 8) {
-            document.write("<link href='nightstyle.css' rel='stylesheet'>");
-          }
-          if (8 <= currentTime&&currentTime < 17) {
-            document.write("<link href='style.css' rel='stylesheet'>");
-          }
-          if (17 <= currentTime&&currentTime < 0) {
-            document.write("<link href='nightstyle.css' rel='stylesheet'>");
-          }
-          
-        }
-        
-        
-        
-      </script>
-      <link href='style.css' rel='stylesheet'>
-      <link href='core.css' rel='stylesheet'>
-      <script>getstyle();</script>
-        
+      
+      
+      
+      
     
+      <link rel="stylesheet" href="css/global.css">
+      <link rel="stylesheet" href="css/style.css">
 
 
-
-      <title>arron ware's scrapbook: Photography</title>
+      <title>arron ware's scrapbook</title>
       <link rel="icon" href="jessop.ico">
 
 
@@ -95,7 +60,7 @@
 
     </head>
 
-    <body>
+    <body class="home">
       <div id="logolinks">
         <h3>
             <a href=index.html style="text-decoration: inherit; color: inherit; font-family: inherit; font-size: inherit;">arron</a> ware's scrapbook
@@ -103,22 +68,34 @@
         <div w3-include-html="include/links.html"></div>
       </div>
         
-        <script>getimg();</script>
+        <!-- Placeholder for the image -->
+        
+        <img class="headergif" id="daygif" src="assets/scottownday.gif" alt="header gif">
+        <img class="headergif" id="nightgif" src="assets/scottownnight.gif" alt="header gif">
+        
+        
         <div class="content">
-            photography, maybe
+          <button id="toggleTheme">Toggle Theme</button>
+          
+            Hi!
+            This is my scrapbook website.
+            I keep all my my little projects and bits that I would like to have online somewhere here. <br><br>
+            The website has no sole objective other than to be one large mashup of odd and ends, I hope you enjoy exploring!
             
 
           
 
         </div>
 
-		
+      <script src="script.js"></script>
     </body>
 
 
 
 
 </html>
+
+<script src="script.js"></script>
 
 <script>
     includeHTML();

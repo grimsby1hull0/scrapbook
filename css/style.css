@@ -1,0 +1,238 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+  text-rendering:optimizeSpeed;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+
+html {
+  
+
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
+
+#logolinks {
+  display: block;
+  
+}
+
+#links {
+  float: left;
+}
+
+
+
+
+
+
+body {
+  padding: 20px;
+  display: block;
+  box-sizing: border-box;
+  text-rendering:optimizeSpeed;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+  background-color: #d1eced;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h3 {
+  color: rgb(94, 94, 94);
+  text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+    font-weight: 100;
+    font-size: xx-large;
+}
+
+a, #links{
+  font-size: larger;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ff3333;
+}
+
+
+.content {
+  width: 90%;
+  /* height: 200px; */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  display: block;
+  background-color: white;
+  padding: 20px;
+  
+}
+
+.contentbox {
+  width: 200px;
+  height:fit-content;
+  min-height: 20%;
+  border-width: 10px;
+  border-color: grey;
+  border-style: double;
+  margin-top: 10px;
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#dtn {
+  display: block;
+}
+
+#ntd {
+  display: none;
+}
+
+
+#nightgif {
+  display: none ;
+}
+
+
+
+
+
+/* Night Variant */
+
+
+/* Home page */ 
+
+body.home.night h3 {
+  color: #ffed00;
+}
+
+body.home.night a, #links {
+  color: #4b77a5;
+}
+
+body.home.night {
+  background-color: #2f3350;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.home.night .content {
+  background-color: #555c8d;
+  color: white;
+}
+
+body.home.night #nightgif {
+  display: block;
+}
+
+body.home.night #daygif {
+  display: none;
+}
+
+body.home.night #ntd {
+  display: block;
+}
+
+body.home.night #dtn {
+  display: none;
+}
+
+
+
+
+/* Video night theme */ 
+
+body.video {
+  background-color: #d0fdff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.video.night {
+  background-color: #113360;
+}
+
+body.video.night h3 {
+  color: #e8552a;
+}
+
+body.home.night a, #links {
+  color: #4b77a5;
+}
+
+body.video.night {
+  background-image: url(../assets/flipnightbg.gif);
+  background-size: 300px;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.video.night .content {
+  background-color: #5a7796;
+  color: white;
+}
+
+body.video.night #nightgif {
+  display: block;
+  
+}
+
+body.video.night #daygif {
+  display: none;
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 965px) {
+    /* Apply to all .content boxes on mobile */
+    .content {
+      width: 100%;
+    }
+  
+    /* Specific adjustments for night themes if needed */
+    body.home.night .content,
+    body.video.night .content {
+      width: 100%;
+    }
+}

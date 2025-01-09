@@ -1,0 +1,18 @@
+/* Scope styles to the .home class */
+body.home h1 {
+    color: #1e90ff;
+  }
+  
+  body.home p {
+    font-size: 18px;
+    color: #ff4500;
+  }
+  
+  body.home.night h1 {
+    color: #87cefa;
+  }
+  
+  body.home.night p {
+    color: #ffa07a;
+  }
+  

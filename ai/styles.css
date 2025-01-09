@@ -1,0 +1,44 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Day theme (default) */
+  body {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  /* Night theme */
+  body.night {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  body.night button {
+    background-color: #ddd;
+    color: #121212;
+  }
+  

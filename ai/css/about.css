@@ -1,0 +1,19 @@
+
+/* Scope styles to the .about class */
+body.about h1 {
+    color: #32cd32;
+  }
+  
+  body.about p {
+    font-size: 18px;
+    color: #2e8b57;
+  }
+  
+  body.about.night h1 {
+    color: #66cdaa;
+  }
+  
+  body.about.night p {
+    color: #98fb98;
+  }
+  
