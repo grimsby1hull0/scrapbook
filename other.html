@@ -34,54 +34,14 @@
     <head>
 
 
-      <script>
-        // Function to get the appropriate image based on the time of day
-        function getimg() {
-          var currentTime = new Date().getHours();
-          var imgElement = document.getElementById('headergif'); // Reference to the image element
-          
-          if (0 <= currentTime && currentTime < 8) {
-            imgElement.src = 'assets/scottownnight.gif';;
-          }
-          else if (8 <= currentTime && currentTime < 17) {
-            imgElement.src = 'assets/scottownday.gif';
-          }
-          else {
-            imgElement.src = 'assets/scottownnight.gif';
-          }
-          
-        }
-        
-        // Function to apply the appropriate style based on the time of day
-        function getstyle() {
-            var currentTime = new Date().getHours();
-            var linkElement = document.getElementById('theme-style'); // Reference to the link element
 
-            if (0 <= currentTime && currentTime < 8) {
-                linkElement.href = 'css/nightstyle.css';
-            } else if (8 <= currentTime && currentTime < 17) {
-                linkElement.href = 'css/style.css';
-            } else {
-                linkElement.href = 'css/nightstyle.css';
-            }
-        }
-        
-      </script>
-
-
-      <!-- Core CSS -->
-      <link href='core.css' rel='stylesheet'>
-      <link id="theme-style" href="" rel="stylesheet"> <!-- The link for the dynamic theme -->
       
-      <script>
-        // Wait until the page is loaded before calling these functions
-        window.onload = function() {
-            getstyle();  // Set the appropriate theme
-            getimg();    // Set the appropriate image
-        };
-      </script>
+      
+      
+      
     
-
+      <link rel="stylesheet" href="css/global.css">
+      <link rel="stylesheet" href="css/style.css">
 
 
       <title>arron ware's scrapbook</title>
@@ -100,33 +60,44 @@
 
     </head>
 
-    <body>
+    <body class="home">
       <div id="logolinks">
         <h3>
-            <a href=index.html style="text-decoration: inherit; color: inherit; font-family: inherit; font-size: inherit;">arron</a> ware's scrapbook
+            <a href=index.html style="text-decoration: inherit; color: inherit; font-family: inherit; font-size: inherit;">arron</a> ware's scrapbook 
+            <button id="toggleTheme" style="background: none; border: none;">
+              <img id="dtn"  src="assets/dtn.png" onclick="this.src='assets/dtnn.gif'" />
+              <img id="ntd"  src="assets/ntd.png" onclick="this.src='assets/ntdd.gif'" />
+            </button>
         </h3>
         <div w3-include-html="include/links.html"></div>
       </div>
         
         <!-- Placeholder for the image -->
-        <img id="headergif" src="" alt="header gif">
+        
+        <img class="headergif" id="daygif" src="assets/scottownday.gif" alt="header gif">
+        <img class="headergif" id="nightgif" src="assets/scottownnight.gif" alt="header gif">
+        
         
         <div class="content">
-            People I have met <br>
           
+          
+          <a class="otherlink" href="people.html">People</a>
+          <a class="otherlink" href="oc.html">Original Characters</a>
             
 
           
 
         </div>
 
-		
+      <script src="script.js"></script>
     </body>
 
 
 
 
 </html>
+
+<script src="script.js"></script>
 
 <script>
     includeHTML();

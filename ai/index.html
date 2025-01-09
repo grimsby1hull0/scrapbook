@@ -3,55 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GIF Toggle</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #fff;
-    }
-
-    #gif-container {
-      cursor: pointer;
-      width: 300px; /* Adjust as needed */
-      height: 300px;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+  <title>Dynamic Number Insert</title>
 </head>
 <body>
-  <div id="gif-container">
-    <img id="current-gif" src="../assets/dtn.gif" alt="Day GIF">
+  <h1>Insert Number Example</h1>
+
+  <!-- Placeholder for the dynamically updated content -->
+  <div w3-include-html="include/variablenumber.html" id="number-placeholder">
+    variable number
   </div>
 
   <script>
-    // Paths to the GIFs
-    const gifs = ["../assets/dtnn.gif", "../assets/ntdd.gif"];
-    let currentGifIndex = 0;
+    // Set the dynamic number
+    const dynamicNumber = 42; // Replace this with your desired number
 
-    const gifContainer = document.getElementById("gif-container");
-    const currentGif = document.getElementById("current-gif");
+    // Wait for the DOM content to load
+    document.addEventListener("DOMContentLoaded", function () {
+      // Find the div with the w3-include-html attribute
+      const placeholder = document.querySelector('[w3-include-html="include/variablenumber.html"]');
 
-    gifContainer.addEventListener("click", () => {
-      // Restart the GIF by reloading it
-      const gifToPlay = gifs[currentGifIndex];
-      currentGif.src = `${gifToPlay}?t=${new Date().getTime()}`; // Add timestamp to force reload
-
-      // Wait for the GIF to finish playing
-      const gifDuration = currentGifIndex === 0 ? 2000 : 3000; // Adjust durations for day/night GIFs
-      setTimeout(() => {
-        // Swap to the next GIF
-        currentGifIndex = (currentGifIndex + 1) % gifs.length;
-        currentGif.src = gifs[currentGifIndex];
-      }, gifDuration);
+      if (placeholder) {
+        // Replace the placeholder text with the dynamic number
+        placeholder.textContent = placeholder.textContent.replace("variable number", dynamicNumber);
+      }
     });
   </script>
 </body>

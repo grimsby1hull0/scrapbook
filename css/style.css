@@ -177,6 +177,12 @@ body.home.night #dtn {
   display: none;
 }
 
+body.home.night #OTMoutput {
+  padding: 20px;
+  background-color: maroon;
+  color: white;
+}
+
 
 
 
@@ -188,6 +194,10 @@ body.video {
 }
 
 body.video #videolink {
+  color: rgb(94, 94, 94);
+}
+
+body.video.night #videolink {
   color: white;
 }
 
