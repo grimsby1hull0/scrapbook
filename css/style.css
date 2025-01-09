@@ -133,6 +133,14 @@ a:visited {
 }
 
 
+#otmtitle {
+  color: white;
+  font-family: notoserif !important;
+  text-align: center;
+}
+
+
+
 
 
 
@@ -177,10 +185,49 @@ body.home.night #dtn {
   display: none;
 }
 
-body.home.night #OTMoutput {
-  padding: 20px;
-  background-color: maroon;
+body.home #OTMoutput {
+  width: 460px;
+  background-color: darkcyan;
   color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+
+body.home.night #OTMoutput {
+  width: 460px;
+  background-color: firebrick;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+body.home #OTMoutput a {
+  
+  color: white;
+  
+}
+
+body.home.night #OTMoutput a {
+  
+  color: white;
+  
+}
+
+body.home #otmtitle {
+  color: white;
+  font-family: notoserif;
+  padding-bottom: 10px;
+}
+
+body.home.night #otmtitle {
+  color: white;
+  font-family: notoserif;
+  padding-bottom: 10px;
 }
 
 
@@ -243,6 +290,56 @@ body.video.night #dtn {
   display: none;
 }
 
+#OTMoutput a {
+  color: white;
+  font-size: inherit !important;
+}
+
+
+/* Other page night mode */
+
+/* Body header links */
+body.other .otherlink {
+  color: darkslategrey !important;
+  width: 200px;
+  background-color: #e1e9ff;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+
+body.other.night .otherlink {
+  color: darkslategrey !important;
+  width: 200px;
+  background-color: #e1e9ff;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+
+body.other .otherlink:hover {
+  color: darkslategrey !important;
+  width: 200px;
+  background-color: #e1e9ff;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+
+body.other.night .otherlink:hover {
+  color: white !important;
+  width: 200px;
+  background-color:darkslategrey;
+  display: block;
+  border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -257,5 +354,38 @@ body.video.night #dtn {
     body.home.night .content,
     body.video.night .content {
       width: 100%;
+    }
+
+
+
+
+
+
+
+
+    body.home #OTMoutput a {
+  
+      color: white;
+      font-size: inherit !important;
+      
+    }
+    
+    body.home.night #OTMoutput a {
+      
+      color: white;
+      font-size: inherit !important;
+      
+    }
+
+    body.home #OTMoutput {
+      width: 97%;
+      margin: 5px;
+      padding: 15px;
+    }
+
+    body.home.night #OTMoutput {
+      width: 97%;
+      margin: 5px;
+      padding: 15px;
     }
 }
