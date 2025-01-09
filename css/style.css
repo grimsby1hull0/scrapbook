@@ -119,10 +119,12 @@ a:visited {
 
 #dtn {
   display: block;
+  width: 32px;
 }
 
 #ntd {
   display: none;
+  width: 32px;
 }
 
 

@@ -1,4 +1,4 @@
-// Select the body and the toggle button
+// Select the body and the toggle button //
 const body = document.body;
 const toggleThemeButton = document.getElementById('toggleTheme');
 
@@ -24,8 +24,3 @@ applyTimeBasedTheme();
 setInterval(applyTimeBasedTheme, 60000); // Check every minute
 
 
-const images = ['/assets/dtnn.gif', '/assets/ntdd.gif'];
-images.forEach((src) => {
-  const img = new Image();
-  img.src = src;
-});

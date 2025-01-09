@@ -102,6 +102,15 @@ a, #links{
     display: block;
   }
 
+  #ntd {
+    width: 64px;
+    display: block;
+  }
+  #dtn {
+    width: 64px;
+    display: block;
+  }
+
   .content {
     width: 100%;
     margin-left: none;
