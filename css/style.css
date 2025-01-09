@@ -187,6 +187,10 @@ body.video {
   transition: background-color 0.3s, color 0.3s;
 }
 
+body.video #videolink {
+  color: white;
+}
+
 body.video.night {
   background-color: #113360;
 }
@@ -221,6 +225,13 @@ body.video.night #daygif {
   display: none;
 }
 
+body.video.night #ntd {
+  display: block;
+}
+
+body.video.night #dtn {
+  display: none;
+}
 
 
 
