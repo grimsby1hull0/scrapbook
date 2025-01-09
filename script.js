@@ -1,4 +1,4 @@
-// Select the body and the toggle button //
+// Select the body and the toggle button 
 const body = document.body;
 const toggleThemeButton = document.getElementById('toggleTheme');
 
