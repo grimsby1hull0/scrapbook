@@ -364,6 +364,10 @@ body.other.night #dtn {
   display: none;
 }
 
+body.other.night h3 {
+  color: white;
+}
+
 
 
 
