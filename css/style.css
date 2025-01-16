@@ -305,20 +305,22 @@ body.other .otherlink {
   background-color: #e1e9ff;
   display: block;
   border-radius: 0px 10px 10px 0px;
+  margin-bottom: 15px;
 }
 
 body.other.night .otherlink {
-  color: darkslategrey !important;
+  color: white !important;
   width: 200px;
-  background-color: #e1e9ff;
+  background-color: #253c7b;
   display: block;
   border-radius: 0px 10px 10px 0px;
+  margin-bottom: 15px;
 }
 
 body.other .otherlink:hover {
-  color: darkslategrey !important;
+  color: rgb(61, 105, 105) !important;
   width: 200px;
-  background-color: #e1e9ff;
+  background-color: #e2c874;
   display: block;
   border-radius: 0px 10px 10px 0px;
 }
@@ -331,7 +333,36 @@ body.other.night .otherlink:hover {
   border-radius: 0px 10px 10px 0px;
 }
 
+body.other {
+  background-color: #bb8cd9;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+body.other.night {
+  background-color: #724191;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.other.night .content {
+  background-color: #414141;
+}
+
+body.other.night #nightgif {
+  display: block;
+  
+}
+
+body.other.night #daygif {
+  display: none;
+}
+
+body.other.night #ntd {
+  display: block;
+}
+
+body.other.night #dtn {
+  display: none;
+}
 
 
 
