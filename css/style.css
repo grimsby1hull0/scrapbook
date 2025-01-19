@@ -369,6 +369,101 @@ body.other.night h3 {
 }
 
 
+/* People page */
+
+body.people h3 {
+  color: #ff2020;
+}
+
+body.people a, #links {
+  color: #ffffff;
+}
+
+body.people {
+  background-color: #facc76;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.people .content {
+  background-color: #ff5e41;
+  color: white;
+  border-radius: 10px;
+}
+
+body.people #nightgif {
+  display: block;
+}
+
+body.people #daygif {
+  display: none;
+}
+
+body.people #ntd {
+  display: block;
+}
+
+body.people #dtn {
+  display: none;
+}
+
+body.people table {
+  padding: 30px;
+}
+
+body.people th {
+  width: 150px;
+  background-color: white;
+  color: black;
+  font-style: italic;
+}
+
+
+
+body.people tr:hover {
+  background-color: rgb(255, 243, 242) !important;
+  color: salmon;
+  transition-duration: 0.2s;
+}
+
+
+/* people night */
+body.people.night h3 {
+  color: #ffed00;
+}
+
+body.people.night a, #links {
+  color: #4b77a5;
+}
+
+body.people.night {
+  background-color: #354d55;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.people.night .content {
+  background-color: #ff5e41;
+  color: white;
+}
+
+body.people.night #nightgif {
+  display: block;
+}
+
+body.people.night #daygif {
+  display: none;
+}
+
+body.people.night #ntd {
+  display: block;
+}
+
+body.people.night #dtn {
+  display: none;
+}
 
 
 
@@ -423,4 +518,8 @@ body.other.night h3 {
       margin: 5px;
       padding: 15px;
     }
+
+    body.people table {
+      padding: 10px;
+  }
 }
