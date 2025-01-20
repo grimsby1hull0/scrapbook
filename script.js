@@ -21,7 +21,7 @@ toggleThemeButton.addEventListener('click', toggleTheme);
 applyTimeBasedTheme();
 
 // Optional: Reapply the time-based theme every minute to stay in sync
-setInterval(applyTimeBasedTheme, 60000); // Check every minute aka 60000
+setInterval(applyTimeBasedTheme, 120000); // Check every minute aka 60000
 
 
 

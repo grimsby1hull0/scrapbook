@@ -193,6 +193,7 @@ body.home #OTMoutput {
   border-radius: 10px;
   padding: 10px;
   padding-bottom: 10px;
+  float: right;
 }
 
 
@@ -401,11 +402,11 @@ body.people #daygif {
 }
 
 body.people #ntd {
-  display: block;
+  display: none;
 }
 
 body.people #dtn {
-  display: none;
+  display: block;
 }
 
 body.people table {
@@ -419,6 +420,9 @@ body.people th {
   font-style: italic;
 }
 
+body.people td {
+  height: 50px;
+}
 
 
 body.people tr:hover {
@@ -430,11 +434,11 @@ body.people tr:hover {
 
 /* people night */
 body.people.night h3 {
-  color: #ffed00;
+  color: #e600ff;
 }
 
 body.people.night a, #links {
-  color: #4b77a5;
+  color: #ffe200;
 }
 
 body.people.night {
