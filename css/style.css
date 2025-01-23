@@ -185,6 +185,10 @@ body.home.night #dtn {
   display: none;
 }
 
+body.home #dtn {
+  display: block;
+}
+
 body.home #OTMoutput {
   width: 460px;
   background-color: darkcyan;
