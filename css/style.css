@@ -139,7 +139,60 @@ a:visited {
   text-align: center;
 }
 
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
 
+.imggallery {
+  width: 100%;
+  
+}
+
+.imgshowcase {
+  width: 180px;
+  height: 160px;
+  float: left;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+
+.imgthumb {
+  filter: invert(100%);
+  transition-duration: 0.5s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.imgthumb:hover {
+  filter: invert(0%);
+  transition-duration: 0.1s;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+.imgthumbcontainer {
+  height: 170px;
+  width: 170px;
+}
+
+
+
+h4 {
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  color: white;
+}
+
+h4:hover {
+  background-color: white;
+  color: black;
+}
 
 
 
@@ -388,6 +441,10 @@ body.other.night h3 {
   color: white;
 }
 
+body.other #projectslink {
+  color: white !important;
+}
+
 
 /* People page */
 
@@ -489,7 +546,170 @@ body.people.night #dtn {
 }
 
 
+/* Sound styles */
 
+body.sound {
+  background-image: url(../assets/soundtile.png) !important;
+  background-repeat: repeat;
+  background-color: #928f74 !important;
+  background-size: 200px !important;
+}
+
+body.sound h3 {
+  color: #ac1e1e;
+}
+
+body.sound a, #links {
+  color: rgb(255, 255, 255);
+}
+
+body.sound #soundlink {
+  color: #ac1e1e;
+}
+
+
+
+
+/* Photography */
+
+body.photography {
+  background-color: #121212 !important;
+}
+
+body.photography h3 {
+  color: rgb(145 0 5);
+}
+
+body.photography .content {
+  background-color: #211313 !important;
+  color: white;
+  height: 80%;
+}
+
+body.photography a, #links {
+  color: crimson !important;
+}
+
+body.photography #photographylink {
+  color: white !important;
+}
+
+
+/* Gardening */
+
+
+body.gardening {
+
+}
+
+/* Web */ 
+
+body.web #weblink {
+  color: white;
+}
+
+
+
+body.web h3 {
+  color: rgb(255 255 255);
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-weight: 100;
+  font-size: xx-large;
+}
+
+body.web {
+  background-color: #cbcbff;
+  padding: 20px;
+  display: block;
+}
+
+body.web * {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+
+body.web a {
+  font-size: larger;
+  text-decoration: none;
+  color: #000ee0;
+  
+}
+
+body.web a:hover {
+  text-decoration: underline;
+}
+
+body.web a:visited {
+  text-decoration: none;
+  color: #551a8b;
+}
+
+
+body.web .content {
+  width: 90%;
+  /* height: 200px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+}
+
+body.web .contentbox {
+  width: 200px;
+  height:fit-content;
+  min-height: 20%;
+  border-width: 10px;
+  border-color: grey;
+  border-style: double;
+  margin-top: 10px;
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+body.web #navbar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+body.web #navbar a {
+    padding: 3px;
+    color: #000ee0;
+}
+
+body.web #sitesbox {
+  background-color: #ffe56f;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  padding: 10px;
+}
+
+
+
+
+/* Art */
+
+body.art {
+  background-color: #f7e4a4;
+}
+
+body.art #artlink {
+  color: white;
+}
 
 
 
@@ -548,5 +768,33 @@ body.people.night #dtn {
 
     body.people table {
       padding: 10px;
+  }
+
+  body.web #sitesbox {
+    background-color: #ffe56f;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+  body.web .content {
+    margin: 10px;
+  }
+
+  body.web .webdes {
+    margin: 10px;
+    display: block;
+  }
+
+  body.web .content {
+    width: 95%;
+    align-content: center;
   }
 }
