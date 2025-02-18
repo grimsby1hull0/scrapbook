@@ -179,12 +179,16 @@ a:visited {
   color: maroon;
   font-family: monospace;
   margin-top: 2px;
+  border-radius: 10px 0px 0px 10px;
+  font-family: typebold;
+  transition-duration: 0.5s;
 }
 
 .closemodal:hover {
   cursor:grab;
-  font-family: typebold;
-  
+  font-size: 30px;
+  transition-duration: 0.2s;
+  box-shadow: rgb(88, 2, 2);
 }
 
 
@@ -623,7 +627,7 @@ body.people.night {
 
 
 body.people.night .content {
-  background-color: #ff5e41;
+  background-color: #42466d;
   color: white;
 }
 
@@ -815,9 +819,14 @@ body.art #artlink {
 
 
 
-@media (min-width: 320px) and (max-width: 965px) {
+@media (min-width: 10px) and (max-width: 965px) {
     .closemodal {
-      padding: 0px 30px 0px 10px;
+      /* padding: 0px 30px 0px 10px; */
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .modalcontent {
+      width: 97%;
     }
 
     /* Apply to all .content boxes on mobile */
