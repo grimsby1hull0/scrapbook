@@ -77,7 +77,71 @@
         <img class="headergif" id="daygif" src="assets/placeholder.gif" alt="header gif">
         <img class="headergif" id="nightgif" src="assets/placeholder.gif" alt="header gif">
         
-        
+
+        <!------------------------------- Modals --------------------------->
+
+        <div id="sunbean" class="bgmodal" >
+          <div class="modalcontent">
+              <div class="modalheader">
+                  <h2 class="closemodal" onclick="document.getElementById('sunbean').style.display='none'">&times;</h2>
+                  <h1>Sunflower Bean</h1>
+              </div>
+              <div class="modalbody">
+                  <img src="assets/people/SunflowerBean_20250214_142334773.RAW-01.MP.COVER.jpg" alt="" width="100%" >
+                  <img src="assets/people/SunflowerBean_20250214_142338531.RAW-01.MP.COVER.jpg" alt="" width="100%" >
+                  <img src="assets/people/SunflowerBean_20250214_142338936.RAW-01.COVER.jpg" alt="" width="100%" >
+                  <img src="assets/people/SunflowerBean_20250214_142339448.RAW-01.COVER.jpg" alt="" width="100%" >
+
+              </div>
+          </div>
+        </div>
+
+        <div id="mattberry" class="bgmodal" >
+          <div class="modalcontent">
+              <div class="modalheader">
+                  <h2 class="closemodal" onclick="document.getElementById('mattberry').style.display='none'">&times;</h2>
+                  <h1>Matt Berry</h1>
+              </div>
+              <div class="modalbody">
+                <img src="assets/people/MattBerry_20250129_152433176.RAW-01.MP.COVER.jpg" alt="" width="100%" >
+                <img src="assets/people/MattBerry_20250129_152433726.RAW-01.COVER.jpg" alt="" width="100%" >
+              </div>
+          </div>
+        </div>
+
+        <div id="marr" class="bgmodal" >
+          <div class="modalcontent">
+              <div class="modalheader">
+                  <h2 class="closemodal" onclick="document.getElementById('marr').style.display='none'">&times;</h2>
+                  <h1>Johnny Marr</h1>
+              </div>
+              <div class="modalbody">
+                We talked about XTC since he recognised my shirt, he initially said he really liked their album Drums And Wires but then 
+                I asked if he has heard much of their other stuff/favourite albums and he said he really loves Black Sea
+                <br>
+                <img src="assets/people/marr_20250118_155934534.RAW-01.MP.COVER.jpg" alt="" width="100%" >
+                <img src="assets/people/marr_20250118_155935650.RAW-01.COVER.jpg" alt="" width="100%" >
+              </div>
+          </div>
+        </div>
+
+        <div id="ff" class="bgmodal" >
+          <div class="modalcontent">
+              <div class="modalheader">
+                  <h2 class="closemodal" onclick="document.getElementById('ff').style.display='none'">&times;</h2>
+                  <h1>Franz Ferdinand</h1>
+              </div>
+              <div class="modalbody">
+                I met Alex Kapranos and Bob first but forgot to ask for a photo. I got a photo with Julian, the keyboard player though!
+                <br>
+                <img src="assets/people/Miaux_20250118_160117646.RAW-01.MP.COVER.jpg" alt="" width="100%" >
+                
+              </div>
+          </div>
+        </div>
+
+
+        <!-------------------      END OF MODALS         -------------------->
         <div class="content">
           
             This is a little log of the people I have met.
@@ -89,17 +153,22 @@
                 <th>Date</th>
                 <th>Location</th>
               </tr>
-              <tr onclick="window.location='people/marr.html';" style=" cursor: pointer;">
+              <tr onclick="document.getElementById('sunbean').style.display='flex'" style=" cursor: pointer;  background-color: salmon;">
+                <td>Sunflower Bean</td>
+                <td>14/01/2025</td>
+                <td>O2 Apollo, Manchester</td>
+              </tr>
+              <tr onclick="document.getElementById('mattberry').style.display='flex'" style=" cursor: pointer;">
                 <td>Matt Berry</td>
                 <td>29/01/2025</td>
                 <td>Roughtrade, Liverpool</td>
               </tr>
-              <tr onclick="window.location='people/marr.html';" style=" cursor: pointer;  background-color: salmon;">
+              <tr onclick="document.getElementById('marr').style.display='flex'" style=" cursor: pointer;  background-color: salmon;">
                 <td>Johnny Marr</td>
                 <td>18/01/2025</td>
                 <td>Aviva Studios, Manchester</td>
               </tr>
-              <tr onclick="window.location='people/franz.html';" style=" cursor: pointer;">
+              <tr onclick="document.getElementById('ff').style.display='flex'" style=" cursor: pointer;">
                 <td>Franz Ferdinand</td>
                 <td>18/01/2025</td>
                 <td>Aviva Studios, Manchester</td>
@@ -233,30 +302,35 @@
                 <th>The year it began</th>
                 <th></th>
               </tr>
-              <tr onclick="window.location='people/heaven17.html';" style=" cursor: pointer;">
+              <tr onclick="window.location='people/heaven17.html';" style=" cursor: pointer; background-color: salmon;">
                 <td>Heaven 17</td>
                 <td>7/11/2023</td>
                 <td>O2 Ritz, Manchester</td>
               </tr>
-              <tr onclick="window.location='people/haircut100.html';" style=" cursor: pointer; background-color: salmon;">
+              <tr onclick="window.location='people/haircut100.html';" style=" cursor: pointer;">
                 <td>Haircut 100</td>
                 <td>18/10/2023</td>
                 <td>O2 Ritz, Manchester</td>
               </tr>
-              <tr onclick="window.location='people/lloydcole.html';" style=" cursor: pointer;">
+              <tr onclick="window.location='people/lloydcole.html';" style=" cursor: pointer; background-color: salmon;">
                 <td>Lloyd Cole</td>
                 <td>10/10/2023</td>
                 <td>O2 Ritz, Manchester</td>
               </tr>
-              <tr onclick="window.location='people/mrb.html';" style=" cursor: pointer; background-color: salmon;">
+              <tr onclick="window.location='people/mrb.html';" style=" cursor: pointer;">
                 <td>Mr B Gentleman Rhymer</td>
                 <td>27/05/2023</td>
                 <td>Bridgewater Hall, Manchester</td>
               </tr>
-              <tr onclick="window.location='people/sparks.html';" style=" cursor: pointer;">
+              <tr onclick="window.location='people/sparks.html';" style=" cursor: pointer; background-color: salmon;">
                 <td>Sparks</td>
                 <td>27/05/2023</td>
                 <td>Bridgewater Hall, Manchester</td>
+              </tr>
+              <tr onclick="window.location='people/sparks.html';" style=" cursor: pointer;">
+                <td>Brian Eno</td>
+                <td>01/05/2023</td>
+                <td>The Leadmill, Sheffield</td>
               </tr>
               <tr onclick="window.location='people/barryadamson.html';" style=" cursor: pointer; background-color: salmon;">
                 <td>Barry Adamson (Magazine, Nick Cave)</td>
