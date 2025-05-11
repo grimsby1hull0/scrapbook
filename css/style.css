@@ -15,7 +15,7 @@
 
 html {
   
-
+  
   image-rendering: -webkit-optimize-contrast;
 }
 
@@ -44,6 +44,7 @@ body {
     -moz-osx-font-smoothing: none;
   background-color: #d1eced;
   transition: background-color 0.3s, color 0.3s;
+  
 }
 
 h3 {
@@ -148,7 +149,8 @@ a:visited {
   padding: 10px 16px;
   background-color: maroon;
   color: white;
-  font-family: typereg;
+  font-family: garamond-italic !important;
+  font-style: italic;
   text-align: left;
   border-radius:  5px 5px 0 0;
   position: relative;
@@ -229,7 +231,7 @@ a:visited {
 
 #otmtitle {
   color: white;
-  font-family: notoserif !important;
+  font-family: garamond !important;
   text-align: center;
 }
 

@@ -13,6 +13,21 @@
     box-sizing:border-box;
   }
 
+@font-face {
+  font-family: notoserif;
+  src: url(../assets/fonts/Noto_Serif_JP/NotoSerifJP-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: garamond;
+  src: url(../assets/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: garamond-italic;
+  src: url(../assets/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+
 
 img {
   image-rendering: optimizeSpeed;             
