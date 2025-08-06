@@ -98,7 +98,9 @@ a:visited {
 }
 
 
-
+.videothumb {
+  width: 500px;
+}
 
 
 
@@ -843,6 +845,9 @@ body.art #artlink {
     }
 
 
+    .videothumb {
+      width: 100%;
+    }
 
 
 
