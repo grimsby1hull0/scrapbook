@@ -818,6 +818,32 @@ body.art #artlink {
 }
 
 
+/* ACSII SPACESHIP */
+#asciishipcontainer {
+    display: flex !important;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    align-items: center;
+    margin-top: 50px;
+
+    float: left;
+    background-color: #0f0061;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#asciishipcontainer a {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+#asciishipcontainer table {
+    display: block;
+    text-align: center;
+}
+
+
 
 
 
