@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script>
+
+
+<html>
+    <head>
+
+
+
+      
+      
+      
+      
+    
+      <link rel="stylesheet" href="css/global.css">
+      <link rel="stylesheet" href="css/style.css">
+
+
+      <title>arron ware's scrapbook</title>
+      <link rel="icon" href="jessop.ico">
+
+
+      
+      <meta name="description" content="projects and other hobby bits that i've been working on">
+      <meta name="keywords" content="arron, ware, photography, sound design, manchester, lincolnshire, cleethorpes, video, art">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+      <meta charset="UTF-8">
+      <meta name="language" content="English">
+      <meta name="author" content="Arron Ware">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body class="other">
+      <div id="logolinks">
+        <h3>
+            <a href=index.html style="text-decoration: inherit; color: inherit; font-family: inherit; font-size: inherit;">arron</a> ware's scrapbook 
+            <!-- <button id="toggleTheme" style="background: none; border: none;">
+              <img id="dtn"  src="assets/dtn.png" onclick="this.src='assets/dtnn.gif'" />
+              <img id="ntd"  src="assets/ntd.png" onclick="this.src='assets/ntdd.gif'" />
+            </button> -->
+        </h3>
+        <div w3-include-html="include/links.html"></div>
+      </div>
+        
+        <!-- Placeholder for the image -->
+        
+        <img class="headergif" id="daygif" src="assets/placeholder.gif" alt="header gif">
+        <!-- <img class="headergif" id="nightgif" src="assets/scottownnight.gif" alt="header gif"> -->
+        
+        
+        <div class="content">
+          <a class="otherlink" href="people.html">People</a>
+          <h2 class="otherlinkdesc">Documenting and logging the people I've met the the interactions I've had with them</h2>
+          <a class="otherlink" href="names.html">Names</a> 
+          <h2 class="otherlinkdesc">A list of my favourite names, handy for when I need one!</h2>
+          <a class="otherlink" href="sewing.html">Sewing</a>
+          <h2 class="otherlinkdesc">A log, notes and To-Do's about my sewing projects</h2>
+          <!-- <div id="grubertdavros">
+            <img src="assets/grubertdavros.png" width="158px">
+          </div> -->
+          
+
+          
+            
+
+          
+
+        </div>
+
+      <script src="script.js"></script>
+    </body>
+
+
+
+
+</html>
+
+<script src="script.js"></script>
+
+<script>
+    includeHTML();
+</script>

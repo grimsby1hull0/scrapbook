@@ -41,6 +41,7 @@ img {
 .headergif {
   width: 600px;
   display: block;
+  image-rendering: pixelated;
 }
 
 
@@ -102,7 +103,7 @@ a, #links{
 
 
 
-@media (min-width: 320px) and (max-width: 965px) {
+@media (min-width: 0px) and (max-width: 965px) {
   .headergif {
     width: 100%;
     display: block;
@@ -111,10 +112,12 @@ a, #links{
   .ntd {
     width: 64px;
     display: block;
+    image-rendering: pixelated;
   }
   .dtn {
     width: 64px;
     display: block;
+    image-rendering: pixelated;
   }
 
   .content {
