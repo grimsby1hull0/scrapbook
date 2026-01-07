@@ -71,6 +71,10 @@ a:visited {
   color: #ff3333;
 }
 
+body.home li a {
+  color: #ff3333;
+}
+
 
 .content {
   width: 90%;
